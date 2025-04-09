@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timbo's Carts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 2rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0.5rem;
+      border-radius: 8px;
+    }
+    form input, form textarea, form select {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+    form button {
+      padding: 0.5rem 1rem;
+    }
+    .products ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Timbo's Carts</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#products">Parts I Install</a>
+      <a href="#contact">Get a Quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <h2>What I Do</h2>
+      <p>Mobile electric golf cart customization and maintenance. I install lift kits, 12V accessories (light bars, stereos, etc.), and offer general service. I come to you, pick up your cart, do the work, and return it ready to ride.</p>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <h2>Gallery</h2>
+      <p>Photos of past work and inspiration will go here.</p>
+    </section>
+
+    <section id="products" class="section products">
+      <h2>Parts I Can Install</h2>
+      <p>Below are examples of accessories I install. These are shown for reference only.</p>
+      <ul>
+        <li>LED Light Kit with Turn Signals & Horn</li>
+        <li>Golf Cart Universal Rear Flip Seat Kit</li>
+        <li>Golf Cart Lift Kit for EZGO, Yamaha, Club Car</li>
+        <li>Bluetooth Stereo Kit for Golf Carts</li>
+        <li>12V Underglow LED Strip Light Kit</li>
+        <li>Heavy-Duty Rear Leaf Springs</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Request a Quote</h2>
+      <form action="mailto:beachamt+timbos@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="services">Services Needed</label>
+        <select id="services" name="services">
+          <option>Lift Kit Installation</option>
+          <option>Lighting Package</option>
+          <option>Stereo Install</option>
+          <option>General Maintenance</option>
+        </select>
+
+        <label for="details">Describe Your Cart & Needs</label>
+        <textarea id="details" name="details" rows="5"></textarea>
+
+        <label for="photo">Upload Photos (Optional)</label>
+        <input type="file" id="photo" name="photo" multiple />
+
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
