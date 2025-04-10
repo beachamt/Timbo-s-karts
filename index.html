@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,47 +6,71 @@
   <title>Timbo's Carts</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: #f8f9fa;
       color: #333;
     }
     header {
-      background: #222;
+      background: #111;
       color: #fff;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
     nav a {
       margin: 0 1rem;
       color: #fff;
       text-decoration: none;
+      font-weight: bold;
     }
     main {
-      padding: 2rem;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
     }
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     .gallery img {
       width: 100%;
       max-width: 300px;
       margin: 0.5rem;
-      border-radius: 8px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     form input, form textarea, form select {
       display: block;
       width: 100%;
       margin-bottom: 1rem;
-      padding: 0.5rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
     }
     form button {
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #111;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
     }
     .products ul {
       list-style-type: square;
       padding-left: 1.5rem;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.875rem;
     }
   </style>
 </head>
@@ -64,25 +87,30 @@
 
   <main>
     <section id="services" class="section">
-      <h2>What I Do</h2>
-      <p>Mobile electric golf cart customization and maintenance. I install lift kits, 12V accessories (light bars, stereos, etc.), and offer general service. I come to you, pick up your cart, do the work, and return it ready to ride.</p>
+      <h2>Mobile Golf Cart Upgrades & Repairs</h2>
+      <p>I specialize in custom lift kits, lighting, stereos, 12V power systems, and cart repair. I offer local pickup and delivery service using my trailer. Whether you’re upgrading for style, utility, or fun, I’ll build it like I’d drive it myself.</p>
+      <p><strong>Now offering:</strong> Onboard inverter & power station installs!</p>
     </section>
 
     <section id="gallery" class="section gallery">
-      <h2>Gallery</h2>
-      <p>Photos of past work and inspiration will go here.</p>
+      <h2>My Work</h2>
+      <img src="IMG_2015.JPEG" alt="Golf cart upgrade" />
+      <img src="IMG_2061.JPEG" alt="Golf cart and trailer" />
+      <img src="IMG_2122.JPEG" alt="Custom power setup" />
+      <img src="IMG_2125.JPEG" alt="Underglow and light bar" />
+      <img src="IMG_2415.JPEG" alt="Installed speaker system" />
     </section>
 
     <section id="products" class="section products">
-      <h2>Parts I Can Install</h2>
-      <p>Below are examples of accessories I install. These are shown for reference only.</p>
+      <h2>Upgrades & Services</h2>
       <ul>
-        <li>LED Light Kit with Turn Signals & Horn</li>
-        <li>Golf Cart Universal Rear Flip Seat Kit</li>
-        <li>Golf Cart Lift Kit for EZGO, Yamaha, Club Car</li>
-        <li>Bluetooth Stereo Kit for Golf Carts</li>
-        <li>12V Underglow LED Strip Light Kit</li>
-        <li>Heavy-Duty Rear Leaf Springs</li>
+        <li>Lift kits for Club Car, EZGO, Yamaha</li>
+        <li>Light bars, underglow kits, signal kits</li>
+        <li>Bluetooth stereo installs</li>
+        <li>12V accessory wiring & switches</li>
+        <li>Battery upgrades and maintenance</li>
+        <li>Onboard inverters/power generator kits</li>
+        <li>Pickup, delivery, and mobile diagnostics</li>
       </ul>
     </section>
 
@@ -103,6 +131,7 @@
           <option>Lift Kit Installation</option>
           <option>Lighting Package</option>
           <option>Stereo Install</option>
+          <option>Inverter/Power Station</option>
           <option>General Maintenance</option>
         </select>
 
@@ -116,5 +145,9 @@
       </form>
     </section>
   </main>
+
+  <footer>
+    &copy; 2025 Timbo's Carts — Custom Electric Golf Cart Upgrades & Mobile Service
+  </footer>
 </body>
 </html>
