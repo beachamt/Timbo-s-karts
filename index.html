@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,6 +65,26 @@
       list-style-type: square;
       padding-left: 1.5rem;
     }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    .price-table th, .price-table td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .price-table th {
+      background-color: #e9ecef;
+    }
+    .price-table tbody tr:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+    .price-table tbody tr:hover {
+      background-color: #dee2e6;
+      transition: background-color 0.3s ease;
+    }
     footer {
       background: #222;
       color: #aaa;
@@ -89,8 +108,27 @@
   <main>
     <section id="services" class="section">
       <h2>Mobile Golf Cart Upgrades & Repairs</h2>
-      <p>I specialize in custom lift kits, lighting, stereos, 12V power systems, and cart repair. I offer local pickup and delivery service. Whether you’re upgrading for style, utility, or fun, I’ll build it like I’d drive it myself.</p>
+      <p>I specialize in custom lift kits, lighting, stereos, 12V power systems, and cart repair. I offer local pickup and delivery service using my trailer. Whether you’re upgrading for style, utility, or fun, I’ll build it like I’d drive it myself.</p>
       <p><strong>Now offering:</strong> Onboard inverter & power station installs!</p>
+
+      <h3>Pricing</h3>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Upgrade/Service</th>
+            <th>Starting Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lift Kit Installation</td><td>$999.99</td></tr>
+          <tr><td>Light Kits</td><td>$49.99</td></tr>
+          <tr><td>Stereo Systems</td><td>$69.99</td></tr>
+          <tr><td>Underglow Lighting</td><td>$49.99</td></tr>
+          <tr><td>Power Station Setup</td><td>$349.99</td></tr>
+          <tr><td>Maintenance Service</td><td>$99.99</td></tr>
+          <tr><td>Diagnostic Pickup</td><td>$69.99</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <section id="gallery" class="section gallery">
